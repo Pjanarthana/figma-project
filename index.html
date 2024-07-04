@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="mainImage" src="abi.jpg" alt="Main Product Image">
+            </div>
+            <div class="thumbnail-images" id="thumbnailImages"></div>
+        </div>
+        <div class="product-details">
+            <p class="vendor" id="vendor"></p>
+            <h1 class="product-title" id="productTitle"></h1>
+            <div class="price-container">
+                <span class="current-price" id="currentPrice"></span>
+                <span class="discount" id="discount"></span>
+                <span class="compare-price" id="comparePrice"></span>
+            </div>
+            <div class="variant-selectors">
+                <div class="color-selector">
+                    <p>Choose a Color</p>
+                    <div id="colorOptions" class="color-options"></div>
+                </div>
+                <div class="size-selector">
+                    <p>Choose a Size</p>
+                    <div id="sizeOptions" class="size-options"></div> 
+                   
+   
+            </div>
+            <div class="quantity-selector">
+                <button id="decreaseQuantity">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button id="increaseQuantity">+</button>
+            </div>
+            <button id="addToCart">Add To Cart</button>
+            <p id="addToCartMessage" class="hidden"></p>
+            <div class="product-description" id="productDescription"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
